@@ -1,1 +1,59 @@
-<h1>Kontak Kami</h1>
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Kontak - Adi</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="index.html">Adi<span class="dot">.</span></a>
+				<nav class="nav">
+					<a href="index.html">Beranda</a>
+					<a href="layanan.html">Layanan</a>
+					<a href="kontak.html">Kontak</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="container section">
+			<h1>Kontak</h1>
+			<p>Butuh bantuan atau ingin memulai proyek? Isi form di bawah atau kirim email langsung.</p>
+
+			<div class="grid contact-grid">
+				<section class="card contact-card">
+					<form action="#" method="post" class="contact-form">
+						<label for="name">Nama</label>
+						<input id="name" name="name" type="text" required>
+
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" required>
+
+						<label for="message">Pesan</label>
+						<textarea id="message" name="message" rows="6" required></textarea>
+
+						<p><button class="btn primary" type="submit">Kirim Pesan</button></p>
+					</form>
+				</section>
+
+				<aside>
+					<div class="card">
+						<h3>Info Kontak</h3>
+						<p>Email: <a href="mailto:adi@example.com">adi@example.com</a></p>
+						<p>Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
+						<p class="muted">Balasan biasanya dalam 1-2 hari kerja.</p>
+					</div>
+				</aside>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>© 2025 Adi</p>
+			</div>
+		</footer>
+	</body>
+</html>

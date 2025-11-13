@@ -1,1 +1,107 @@
-<h1>My Portfolio Adi</h1>
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Adi - Portofolio</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="index.html">Adi<span class="dot">.</span></a>
+				<nav class="nav" id="main-nav">
+					<a href="index.html">Beranda</a>
+					<a href="layanan.html">Layanan</a>
+					<a href="kontak.html">Kontak</a>
+				</nav>
+				<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero-inner">
+					<div class="hero-left">
+						<p class="eyebrow">Halo, saya</p>
+						<h1 class="hero-title">Adi — Web Developer & UI Designer</h1>
+						<p class="hero-sub">Saya membangun website modern, cepat, dan responsif untuk bisnis dan personal brand.</p>
+						<p class="hero-actions">
+							<a class="btn primary" href="#projects">Lihat Proyek</a>
+							<a class="btn" href="kontak.html">Kontak</a>
+						</p>
+					</div>
+					<aside class="hero-right">
+						<div class="profile-card">
+							<div class="avatar"></div>
+							<h3>Adi</h3>
+							<p class="muted">Frontend & UI/UX</p>
+							<p class="small">Berdomisili di Indonesia • Tersedia untuk proyek freelance</p>
+						</div>
+					</aside>
+				</div>
+			</section>
+
+			<section id="about" class="container section">
+				<h2>Tentang Saya</h2>
+				<p>Saya memiliki pengalaman membangun antarmuka yang sederhana dan intuitif menggunakan HTML, CSS, dan JavaScript. Fokus pada performa dan pengalaman pengguna.</p>
+			</section>
+
+			<section id="projects" class="container section">
+				<h2>Proyek Terbaru</h2>
+				<div class="grid projects-grid">
+					<article class="card">
+						<div class="card-media project-1"></div>
+						<div class="card-body">
+							<h3>Website Toko Online</h3>
+							<p>Membangun toko online responsif dengan pengalaman checkout sederhana.</p>
+							<p class="card-actions"><a class="link" href="#">Detail</a></p>
+						</div>
+					</article>
+					<article class="card">
+						<div class="card-media project-2"></div>
+						<div class="card-body">
+							<h3>Landing Page Startup</h3>
+							<p>Landing page dengan fokus konversi dan performa tinggi.</p>
+							<p class="card-actions"><a class="link" href="#">Detail</a></p>
+						</div>
+					</article>
+					<article class="card">
+						<div class="card-media project-3"></div>
+						<div class="card-body">
+							<h3>Portfolio Pribadi</h3>
+							<p>Desain minimalis dan cepat, cocok untuk freelancer dan kreator.</p>
+							<p class="card-actions"><a class="link" href="#">Detail</a></p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="container section">
+				<h2>Layanan</h2>
+				<p>Saya menawarkan pembuatan website, perbaikan UI/UX, dan optimasi performa.</p>
+				<p><a class="btn" href="layanan.html">Lihat layanan</a></p>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>© 2025 Adi. Dibuat dengan ♥.</p>
+				<nav class="footer-nav">
+					<a href="index.html">Beranda</a>
+					<a href="layanan.html">Layanan</a>
+					<a href="kontak.html">Kontak</a>
+				</nav>
+			</div>
+		</footer>
+
+		<script>
+			const nav = document.getElementById('main-nav');
+			const toggle = document.getElementById('nav-toggle');
+			toggle.addEventListener('click', () => {
+				nav.classList.toggle('open');
+			});
+		</script>
+	</body>
+</html>
